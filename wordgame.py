@@ -16,7 +16,7 @@ with open('wordlist.txt', 'r') as f:
 
 answers = []
 while len(answers) < 2:
-    scramble = "".join([random.choice(string.ascii_letters).upper() for x in range(3, random.randint(6, 8))])
+    scramble = "".join([random.choice(string.ascii_letters).upper() for x in range(0, random.randint(3, 5))])
     answers = [ans for ans in words if isAnagram(scramble, ans)]
 
 print(scramble)
